@@ -1,5 +1,3 @@
 export default function SideMenu() {
-  return (
-    <div>SideMenu</div>
-  )
+  return <div className="text-black dark:text-white">SideMenu</div>;
 }

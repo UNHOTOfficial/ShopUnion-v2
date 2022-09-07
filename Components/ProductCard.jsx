@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ProductRating from "./ProductRating";
 
 export default function ProductCard({
   image,
@@ -10,10 +11,12 @@ export default function ProductCard({
   hasDiscount,
   price,
   discount,
+  rate,
+  count
 }) {
   return (
     <div className="w-72 bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-      <Link href={id}>
+      <Link href={`/products/${id}`}>
         <a>
           <Image
             src={image}
@@ -43,6 +46,7 @@ export default function ProductCard({
             </h6>
           </a>
         </Link>
+        <ProductRating rate={rate} count={count} />
         <div className="text-gray-900 dark:text-white">
           {hasDiscount ? (
             <div className="flex justify-between items-center">
