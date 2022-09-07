@@ -3,7 +3,7 @@ import Logo from "../public/assest/1199124.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900 fixed w-full bottom-0">
+    <footer className="bg-white dark:bg-gray-900 w-full">
       <div className="flex justify-around items-center">
       <div className="flex gap-10 py-8 px-6 md:grid-cols-4">
         <Image
@@ -14,6 +14,7 @@ export default function Footer() {
           width={150}
           height={150}
           layout={"fixed"}
+          priority
         ></Image>
         <div>
           <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
