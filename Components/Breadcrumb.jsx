@@ -97,7 +97,7 @@ export default function Breadcrumb({ main, type, title }) {
                 clipRule="evenodd"
               ></path>
             </svg>
-            <span className="ml-1 text-sm font-medium text-ellipsis text-gray-500 md:ml-2 dark:text-gray-400">
+            <span className="ml-1 overflow-hidden w-52 whitespace-nowrap text-sm font-medium text-ellipsis text-gray-500 md:ml-2 dark:text-gray-400">
               {title}
             </span>
           </div>

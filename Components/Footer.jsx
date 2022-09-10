@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../public/assest/1199124.png";
+import Logo from "../public/assest/logo/LogoIcon.png";
 
 export default function Footer() {
   return (
@@ -15,6 +15,7 @@ export default function Footer() {
           height={150}
           layout={"fixed"}
           priority
+          style={{filter:"invert(100%)"}}
         ></Image>
         <div>
           <h2 className="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-gray-400">
