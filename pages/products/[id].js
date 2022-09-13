@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import GetProducts from "../../services/GetProducts";
-import ProductRating from "../../Components/ProductRating";
-import Breadcrumb from "../../Components/Breadcrumb";
+import ProductRating from "../../components/productRating";
+import Breadcrumb from "../../components/breadcrumb";
 
 export default function Product({ product }) {
   return (

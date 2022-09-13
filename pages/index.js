@@ -1,7 +1,7 @@
 import axios from "axios";
 import Head from "next/head";
 import React from "react";
-import Carousel from "../Components/Carousel";
+import Carousel from "../components/carousel";
 import GetProducts from "../services/GetProducts";
 export default function Home({sliderImages}) {
   return (

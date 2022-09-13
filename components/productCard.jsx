@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Badge from "./Badge";
-import ProductRating from "./ProductRating";
+import Badge from "./badge";
+import ProductRating from "./productRating";
 
 export default function ProductCard({
   image,

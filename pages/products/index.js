@@ -1,8 +1,8 @@
 import React from "react";
-import ProductCard from "../../Components/ProductCard";
-import SideMenu from "../../Components/SideMenu";
+import ProductCard from "../../components/productCard";
+import SideMenu from "../../components/sideMenu";
 import GetProducts from "../../services/GetProducts";
-import Pagination from "../../Components/Pagination";
+import Pagination from "../../components/pagination";
 export default function index({ products }) {
   return (
     <div className="flex justify-around container py-2">
