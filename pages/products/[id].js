@@ -67,9 +67,9 @@ export default function Product({ product }) {
 }
 
 export async function getStaticPaths() {
-  const products = await GetProducts("http://localhost:3000/api/products");
-  const paths = products.data.map((product) => ({
-    params: { id: product._id },
+  const products = await GetProducts("https://apigenerator.dronahq.com/api/P51aWq0N/products");
+  const paths = products.map((product) => ({
+    params: { id: product.id.toString() },
   }));
   return {
     paths: paths,
@@ -79,11 +79,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const product = await GetProducts(
-    `http://localhost:3000/api/products/${params.id}`
+    `https://apigenerator.dronahq.com/api/P51aWq0N/products/${params.id}`
   );
   return {
     props: {
-      product: product.data,
+      product: product,
     },
   };
 }

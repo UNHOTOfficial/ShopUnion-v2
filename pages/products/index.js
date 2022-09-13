@@ -17,7 +17,7 @@ export default function index({ products }) {
                 image={product.image}
                 title={product.title}
                 description={product.description}
-                id={product._id}
+                id={product.id}
                 hasDiscount={product.hasDiscount}
                 price={product.price}
                 discount={product.discount}
@@ -34,7 +34,7 @@ export default function index({ products }) {
   );
 }
 export async function getStaticProps() {
-  const products = await GetProducts("http://localhost:3000/api/products");
+  const products = await GetProducts("https://apigenerator.dronahq.com/api/P51aWq0N/products/");
 
-  return { props: { products: products.data } };
+  return { props: { products: products } };
 }

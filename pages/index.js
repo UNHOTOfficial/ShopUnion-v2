@@ -17,11 +17,11 @@ export default function Home({sliderImages}) {
 }
 
 export async function getServerSideProps() {
-  const sliderImages = await GetProducts("http://localhost:3000/api/slider");
+  const sliderImages = await GetProducts("https://apigenerator.dronahq.com/api/25-FaSpo/sliderz");
 
   return {
     props: {
-      sliderImages: sliderImages.data,
+      sliderImages: sliderImages,
     },
   };
 }
