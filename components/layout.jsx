@@ -1,7 +1,7 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import HeaderSecondary from "./HeaderSecondary";
-import HeaderDeals from "./HeaderDeals";
+import Header from "./header";
+import Footer from "./footer";
+import HeaderSecondary from "./headerSecondary";
+import HeaderDeals from "./headerDeals";
 
 export default function Layout({ children }) {
   return (
