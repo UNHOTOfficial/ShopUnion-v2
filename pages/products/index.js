@@ -4,8 +4,13 @@ import SideMenu from "../../components/sideMenu";
 import GetProducts from "../../services/GetProducts";
 import Pagination from "../../components/pagination";
 import Breadcrumb from "../../components/breadcrumb";
+import Head from "next/head";
 export default function index({ products }) {
   return (
+    <>
+    <Head>
+      <meta name="description" content="ShopUnion Products Page."/>
+    </Head>
     <div className="flex justify-around container py-2">
       <div className="sideMenu hidden lg:block">
         <SideMenu />
@@ -32,7 +37,7 @@ export default function index({ products }) {
         </div>
         <Pagination />
       </div>
-    </div>
+    </div></>
   );
 }
 export async function getStaticProps() {
