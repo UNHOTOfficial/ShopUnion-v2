@@ -37,6 +37,8 @@ export default function ProductCard({
                   height={150}
                   layout="responsive"
                   objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
                 />
               </a>
             </Link>
@@ -129,6 +131,8 @@ export default function ProductCard({
                   height={150}
                   layout="fixed"
                   objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
                 />
               </a>
             </Link>

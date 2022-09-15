@@ -18,6 +18,8 @@ export default function homeCategories({ categories }) {
                 height={50}
                 layout="fixed"
                 objectFit="cover"
+                placeholder="blur"
+                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
               />
               <span className="capitalize mt-1">{category.title}</span>
             </div>

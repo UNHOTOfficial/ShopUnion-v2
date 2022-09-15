@@ -27,6 +27,8 @@ export default function Product({ product }) {
             height="300"
             layout="responsive"
             quality="100"
+            placeholder="blur"
+            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
           ></Image>
         </div>
         <div className="flex flex-col lg:basis-2/6 text-xl px-5">
