@@ -24,7 +24,7 @@ export default function ProductCard({
         <title>ShopUnion</title>
       </Head>
       {type === "page" ? (
-        <div className="m-1 rounded-lg bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 lg:w-72">
+        <div className="m-1 rounded-lg bg-white border border-gray-200 shadow-md dark:bg-gray-700 dark:border-gray-600 lg:w-72">
           <div className="bg-white rounded-t-lg p-2">
             <Link href={`/products/${id}`}>
               <a>
@@ -44,7 +44,7 @@ export default function ProductCard({
           <div className="p-5">
             <Link href={`/products/${id}`}>
               <a>
-                <h6
+                <span
                   className="mb-2 text-base font-medium text-gray-900 dark:text-white hover:text-slate-400"
                   style={{
                     overflow: "hidden",
@@ -56,7 +56,7 @@ export default function ProductCard({
                   }}
                 >
                   {title}
-                </h6>
+                </span>
               </a>
             </Link>
             <ProductRating rate={rate} count={count} />
@@ -90,7 +90,7 @@ export default function ProductCard({
                       <span className="mr-2 text-2xl">
                         ${Math.floor((price - discount) * 100) / 100}
                       </span>
-                      <s className="text-gray-500">
+                      <s className="text-slate-300">
                         ${Math.floor(price * 100) / 100}
                       </s>
                     </a>
@@ -112,7 +112,7 @@ export default function ProductCard({
           </div>
         </div>
       ) : (
-        <div className="m-1 rounded-lg bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 lg:w-72">
+        <div className="m-1 rounded-lg bg-white border border-gray-200 shadow-md dark:bg-gray-700 dark:border-gray-600 lg:w-72">
           <div className="bg-white rounded-t-lg p-2 flex justify-center">
             <Link href={`/products/${id}`}>
               <a>
@@ -132,7 +132,7 @@ export default function ProductCard({
           <div className="p-5">
             <Link href={`/products/${id}`}>
               <a>
-                <h6
+                <span
                   className="mb-2 text-base font-medium text-gray-900 dark:text-white hover:text-slate-400"
                   style={{
                     overflow: "hidden",
@@ -144,7 +144,7 @@ export default function ProductCard({
                   }}
                 >
                   {title}
-                </h6>
+                </span>
               </a>
             </Link>
             <ProductRating rate={rate} count={count} />
@@ -178,7 +178,7 @@ export default function ProductCard({
                       <span className="mr-2 text-2xl">
                         ${Math.floor((price - discount) * 100) / 100}
                       </span>
-                      <s className="text-gray-500">
+                      <s className="text-slate-300">
                         ${Math.floor(price * 100) / 100}
                       </s>
                     </a>
