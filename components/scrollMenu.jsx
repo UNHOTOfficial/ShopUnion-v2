@@ -7,13 +7,14 @@ export default function scrollMenu({ offerProducts }) {
       <div className="flex items-center justify-between mb-3">
         <h2 className="text-gray-900 text-3xl dark:text-white">Offers</h2>
         <Link href="/offers">
-          <a className="text-blue-700 hover:underline dark:text-blue-600">
+          <a className="text-indigo-400 hover:underline dark:text-indigo-300">
             See More...
           </a>
         </Link>
       </div>
       <div className="flex items-center">
         <button
+          aria-label="left"
           type="button"
           className="text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
         >
@@ -52,6 +53,7 @@ export default function scrollMenu({ offerProducts }) {
           ))}
         </div>
         <button
+          aria-label="left"
           type="button"
           className="text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
         >
