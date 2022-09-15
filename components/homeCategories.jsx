@@ -17,6 +17,7 @@ export default function homeCategories({ categories }) {
                 height="80"
                 layout="fixed"
                 quality="100"
+                objectFit="cover"
               />
               <span className="capitalize mt-1">{category.title}</span>
             </div>
