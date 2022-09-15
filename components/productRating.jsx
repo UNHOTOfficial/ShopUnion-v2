@@ -1,4 +1,4 @@
-export default function ProductRating({ rate, count }) {
+export default function ProductRating({ rate, count, countHidden }) {
   const stars = [1, 2, 3, 4, 5];
   return (
     <div className="flex items-center border-b pb-2">
@@ -20,8 +20,12 @@ export default function ProductRating({ rate, count }) {
         </svg>
       ))}
 
-      <span className="hidden md:block w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
-      <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-white">
+      <span
+        className={`${countHidden} md:block w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400`}
+      ></span>
+      <span
+        className={`${countHidden} md:block text-sm font-medium text-gray-900 dark:text-white`}
+      >
         {count} Ratings
       </span>
     </div>
