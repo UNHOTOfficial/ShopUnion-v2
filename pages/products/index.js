@@ -3,6 +3,7 @@ import ProductCard from "../../components/productCard";
 import SideMenu from "../../components/sideMenu";
 import GetProducts from "../../services/GetProducts";
 import Pagination from "../../components/pagination";
+import Breadcrumb from "../../components/breadcrumb";
 export default function index({ products }) {
   return (
     <div className="flex justify-around container py-2">
@@ -10,7 +11,7 @@ export default function index({ products }) {
         <SideMenu />
       </div>
       <div className="flex flex-col items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4">
           {products.map((product) => (
             <React.Fragment key={product.id}>
               <ProductCard
@@ -35,7 +36,9 @@ export default function index({ products }) {
   );
 }
 export async function getStaticProps() {
-  const products = await GetProducts("https://apigenerator.dronahq.com/api/P51aWq0N/products/");
+  const products = await GetProducts(
+    "https://apigenerator.dronahq.com/api/P51aWq0N/products/"
+  );
 
   return { props: { products: products } };
 }
