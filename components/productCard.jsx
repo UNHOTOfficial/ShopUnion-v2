@@ -73,7 +73,9 @@ export default function ProductCard({
                           100 - ((price - discount) * 100) / price
                         )}`}
                       />
-                      <span className="text-sm text-red-300 dark:text-red-100">OFFER</span>
+                      <span className="text-sm text-red-300 dark:text-red-100">
+                        OFFER
+                      </span>
                     </div>
                   ) : (
                     <Badge
