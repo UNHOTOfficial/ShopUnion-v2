@@ -4,7 +4,7 @@ import React from "react";
 
 export default function homeCategories({ categories }) {
   return (
-    <div className="text-gray-900 flex my-3 bg-slate-300 dark:text-white dark:bg-gray-900">
+    <div className="text-gray-900 flex my-3 dark:text-white">
       {categories.map((category) => (
         <Link href={`/products/${category.title}`} key={category.title}>
           <a>
