@@ -4,9 +4,8 @@ import React from "react";
 export default function HeaderSecondary() {
   return (
     <nav className="bg-white border-gray-200 px-4 sm:px-4 py-2.5 rounded dark:bg-gray-800">
-      <div className="container flex flex-wrap items-center">
-        <ul className="text-gray-900 flex w-full justify-between md:w-1/4 dark:text-white">
-          <div className="flex justify-between w-1/2">
+      <div className="container flex items-center text-gray-900 dark:text-white">
+        <ul className="flex w-2/3 md:w-1/3 xl:w-1/4 justify-between">
             <li className="hover:underline">
               <Link href="/">Home</Link>
             </li>
@@ -16,16 +15,15 @@ export default function HeaderSecondary() {
             <li className="hover:underline">
               <Link href="/popular">Popular</Link>
             </li>
-          </div>
-          <li className="hover:text-indigo-300">
-            <Link href="/cart">
+        </ul>
+        <Link href="/cart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-6 h-6 ml-auto"
               >
                 <path
                   strokeLinecap="round"
@@ -34,8 +32,6 @@ export default function HeaderSecondary() {
                 />
               </svg>
             </Link>
-          </li>
-        </ul>
       </div>
     </nav>
   );

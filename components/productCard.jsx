@@ -41,11 +41,11 @@ export default function ProductCard({
               </a>
             </Link>
           </div>
-          <div className="p-5">
+          <div className="p-3 md:p-5">
             <Link href={`/products/${id}`}>
               <a>
                 <span
-                  className="mb-2 text-base font-medium text-gray-900 dark:text-white hover:text-slate-400"
+                  className="mb-2 text-sm md:text-base font-medium text-gray-900 dark:text-white hover:text-slate-400"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -62,10 +62,10 @@ export default function ProductCard({
             <ProductRating rate={rate} count={count} />
             <div className="text-gray-900 dark:text-white pt-2">
               {hasDiscount ? (
-                <div className="flex items-center">
+                <div className="flex flex-col items-start md:flex-row md:items-center ">
                   {Math.round(100 - ((price - discount) * 100) / price) >=
                   40 ? (
-                    <div className="flex flex-col">
+                    <div className="flex flex-row w-full justify-between md:flex-col">
                       <Badge
                         text={"bg-red-100"}
                         background={"text-red-800"}
@@ -87,7 +87,7 @@ export default function ProductCard({
 
                   <Link href={`/products/${id}`}>
                     <a>
-                      <span className="mr-2 text-2xl">
+                      <span className="mr-2 text-base md:text-xl">
                         ${Math.floor((price - discount) * 100) / 100}
                       </span>
                       <s className="text-slate-300">
@@ -98,7 +98,7 @@ export default function ProductCard({
                 </div>
               ) : (
                 <Link href={`/products/${id}`}>
-                  <a className="text-xl">${Math.floor(price * 100) / 100}</a>
+                  <a className="text-base md:text-xl">${Math.floor(price * 100) / 100}</a>
                 </Link>
               )}
             </div>
@@ -175,7 +175,7 @@ export default function ProductCard({
 
                   <Link href={`/products/${id}`}>
                     <a>
-                      <span className="mr-2 text-2xl">
+                      <span className="mr-2 text-base md:text-xl">
                         ${Math.floor((price - discount) * 100) / 100}
                       </span>
                       <s className="text-slate-300">
@@ -186,7 +186,7 @@ export default function ProductCard({
                 </div>
               ) : (
                 <Link href={`/products/${id}`}>
-                  <a className="text-xl">${Math.floor(price * 100) / 100}</a>
+                  <a className="text-base md:text-xl">${Math.floor(price * 100) / 100}</a>
                 </Link>
               )}
             </div>

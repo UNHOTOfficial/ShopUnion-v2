@@ -8,15 +8,15 @@ export default function homeCategories({ categories }) {
       {categories.map((category) => (
         <Link href={`/products/${category.title}`} key={category.title}>
           <a>
-            <div className="flex flex-col items-center px-2">
+            <div className="flex flex-col px-2">
               <Image
                 className="rounded-full"
                 src={category.url}
                 alt={category.title}
-                width="80"
-                height="80"
-                layout="fixed"
                 quality="100"
+                width={50}
+                height={50}
+                layout="fixed"
                 objectFit="cover"
               />
               <span className="capitalize mt-1">{category.title}</span>

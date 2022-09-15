@@ -10,7 +10,7 @@ export default function ProductRating({ rate, count }) {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="none"
-          className="w-5 h-5"
+          className="w-3 h-3 md:w-5 md:h-5"
         >
           <path
             strokeLinecap="round"
@@ -20,8 +20,8 @@ export default function ProductRating({ rate, count }) {
         </svg>
       ))}
 
-      <span className="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
-      <span className="text-sm font-medium text-gray-900 dark:text-white">
+      <span className="hidden md:block w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
+      <span className="hidden md:block text-sm font-medium text-gray-900 dark:text-white">
         {count} Ratings
       </span>
     </div>
