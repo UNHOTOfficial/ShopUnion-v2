@@ -3,6 +3,7 @@ import Image from "next/image";
 import GetProducts from "../../services/GetProducts";
 import ProductRating from "../../components/productRating";
 import Breadcrumb from "../../components/breadcrumb";
+import ScrollMenu from "../../components/scrollMenu";
 
 export default function Product({ product }) {
   return (
@@ -10,24 +11,32 @@ export default function Product({ product }) {
       <Head>
         <title>ShopUnion - {product.title}</title>
       </Head>
-      <Breadcrumb main={product.category.main} type={product.category.type} title={product.title}/>
-      <div className="flex flex-wrap justify-center text-gray-900 dark:text-gray-200">
-        <div className="basis-8/12 px-5 lg:basis-2/6">
+      <Breadcrumb
+        main={product.category.main}
+        type={product.category.type}
+        title={product.title}
+      />
+      <div className="my-3 flex flex-wrap justify-center text-gray-900 dark:text-gray-200">
+        <div className="basis-8/12 px-5 lg:basis-2/6 bg-white dark:bg-gray-900">
           <Image
             className="rounded-lg"
             src={product.image}
             alt={product.title}
-            height="400"
-            width="400"
+            width="300"
+            height="300"
             layout="responsive"
             quality="100"
           ></Image>
         </div>
-        <div className="basis-8/12  lg:basis-2/6 text-xl px-5">
-          <h4>{product.title}</h4>
+        <div className="flex flex-col lg:basis-2/6 text-xl px-5">
+          <span className="my-1 text-xs text-indigo-300 hover:underline md:text-sm ">
+            {product.specifications.Brand && product.specifications.Brand}
+          </span>
+          <span className="text-base md:text-xl">{product.title}</span>
           <ProductRating
             rate={product.rating.rate}
             count={product.rating.count}
+            countHidden={""}
           />
           {product.hasDiscount === true ? (
             <div className="flex items-center">
@@ -48,26 +57,32 @@ export default function Product({ product }) {
           ) : (
             <span>${product.price}</span>
           )}
-          <div className="flex flex-col text-sm">
+          <div className="flex flex-col text-sm mt-3">
             {Object.entries(product.specifications).map((specification) => (
-              <div key={product._id} className="flex justify-between">
-                <span className="font-semibold uppercase">
+              <div
+                key={product._id}
+                className="my-1 flex justify-between items-center"
+              >
+                <span className="font-semibold capitalize w-1/2">
                   {specification[0]}
                 </span>
-                <span>{specification[1]}</span>
+                <span className="w-1/2">{specification[1]}</span>
               </div>
             ))}
           </div>
-          <div>{product.description}</div>
+          <p className="text-sm mt-3">{product.description}</p>
         </div>
         <div className="hidden px-5 lg:block basis-1/6">H</div>
+        {/* <ScrollMenu offerProducts={relatedProducts} /> */}
       </div>
     </>
   );
 }
 
 export async function getStaticPaths() {
-  const products = await GetProducts("https://apigenerator.dronahq.com/api/P51aWq0N/products");
+  const products = await GetProducts(
+    "https://apigenerator.dronahq.com/api/P51aWq0N/products"
+  );
   const paths = products.map((product) => ({
     params: { id: product.id.toString() },
   }));
@@ -81,9 +96,13 @@ export async function getStaticProps({ params }) {
   const product = await GetProducts(
     `https://apigenerator.dronahq.com/api/P51aWq0N/products/${params.id}`
   );
+  // const relatedProducts = await GetProducts(
+  //   `https://apigenerator.dronahq.com/api/P51aWq0N/products`
+  // );
   return {
     props: {
       product: product,
+      // relatedProducts: relatedProducts,
     },
   };
 }
