@@ -24,7 +24,7 @@ export default function ProductCard({
         <title>ShopUnion</title>
       </Head>
       {type === "page" ? (
-        <div className="m-1 rounded-lg bg-white border border-gray-200 shadow-md dark:bg-gray-700 dark:border-gray-600 lg:w-72">
+        <div className="m-1 rounded-lg bg-white border border-gray-200 shadow-md dark:bg-gray-700 dark:border-gray-600">
           <div className="bg-white rounded-t-lg p-2">
             <Link href={`/products/${id}`}>
               <a>
@@ -59,13 +59,13 @@ export default function ProductCard({
                 </span>
               </a>
             </Link>
-            <ProductRating rate={rate} count={count} countHidden={"block"}/>
+            <ProductRating rate={rate} count={count} countHidden={"block"} />
             <div className="text-gray-900 dark:text-white pt-2">
               {hasDiscount ? (
-                <div className="flex flex-col items-start md:flex-row md:items-center ">
+                <div className="flex flex-col items-start xl:flex-row md:items-center ">
                   {Math.round(100 - ((price - discount) * 100) / price) >=
                   40 ? (
-                    <div className="flex flex-row w-full justify-between md:flex-col">
+                    <div className="flex flex-row justify-between xl:flex-col">
                       <Badge
                         text={"bg-red-100"}
                         background={"text-red-800"}
@@ -73,7 +73,7 @@ export default function ProductCard({
                           100 - ((price - discount) * 100) / price
                         )}`}
                       />
-                      <span className="text-sm text-red-100">OFFER</span>
+                      <span className="text-sm text-red-300 dark:text-red-100">OFFER</span>
                     </div>
                   ) : (
                     <Badge
@@ -98,12 +98,14 @@ export default function ProductCard({
                 </div>
               ) : (
                 <Link href={`/products/${id}`}>
-                  <a className="text-base md:text-xl">${Math.floor(price * 100) / 100}</a>
+                  <a className="text-base md:text-xl">
+                    ${Math.floor(price * 100) / 100}
+                  </a>
                 </Link>
               )}
             </div>
             {quantity <= 5 ? (
-              <span className="text-red-100 dark:text-red-200">
+              <span className="text-red-300 dark:text-red-200">
                 Only {quantity} left in stock.
               </span>
             ) : (
@@ -147,7 +149,7 @@ export default function ProductCard({
                 </span>
               </a>
             </Link>
-            <ProductRating rate={rate} count={count} countHidden={"hidden"}/>
+            <ProductRating rate={rate} count={count} countHidden={"hidden"} />
             <div className="text-gray-900 dark:text-white pt-2">
               {hasDiscount ? (
                 <div className="flex items-center">
@@ -186,12 +188,14 @@ export default function ProductCard({
                 </div>
               ) : (
                 <Link href={`/products/${id}`}>
-                  <a className="text-base md:text-xl">${Math.floor(price * 100) / 100}</a>
+                  <a className="text-base md:text-xl">
+                    ${Math.floor(price * 100) / 100}
+                  </a>
                 </Link>
               )}
             </div>
             {quantity <= 5 ? (
-              <span className="text-red-100 dark:text-red-200">
+              <span className="text-red-300 dark:text-red-200">
                 Only {quantity} left in stock.
               </span>
             ) : (
