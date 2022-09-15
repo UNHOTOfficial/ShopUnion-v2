@@ -59,7 +59,7 @@ export default function ProductCard({
                 </span>
               </a>
             </Link>
-            <ProductRating rate={rate} count={count} />
+            <ProductRating rate={rate} count={count} countHidden={"hidden"}/>
             <div className="text-gray-900 dark:text-white pt-2">
               {hasDiscount ? (
                 <div className="flex flex-col items-start md:flex-row md:items-center ">
