@@ -200,12 +200,10 @@ export default function ProductCard({
                 </Link>
               )}
             </div>
-            {quantity <= 5 ? (
+            {quantity <= 5 && (
               <span className="text-red-300 dark:text-red-200">
                 Only {quantity} left in stock.
               </span>
-            ) : (
-              <></>
             )}
           </div>
         </div>
