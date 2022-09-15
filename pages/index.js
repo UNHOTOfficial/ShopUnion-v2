@@ -10,6 +10,10 @@ export default function Home({ sliderImages, offerProducts, categories }) {
     <>
       <Head>
         <title>ShopUnion</title>
+        <meta
+          name="description"
+          content="ShopUnion - One Of The Biggest Online Shops."
+        />
       </Head>
       <div>
         <Carousel sliderImages={sliderImages} />
