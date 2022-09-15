@@ -9,7 +9,7 @@ export default function Header() {
   <div className="container flex flex-wrap justify-between items-center mx-auto">
   <Link href="/">
     <a className="flex">
-      <Image src="/assest/logo/image.svg" width="50" height="50" alt="Logo"/>
+      <Image src="/assest/logo/image.svg" width="50" height="50" alt="Logo" layout="fixed"/>
       <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ShopUnion</span></a>
 </Link>
   <div className="flex md:order-2">
