@@ -10,6 +10,7 @@ export default function Product({ product }) {
     <>
       <Head>
         <title>ShopUnion - {product.title}</title>
+        <meta name="description" content={product.title} />
       </Head>
       <Breadcrumb
         main={product.category.main}
