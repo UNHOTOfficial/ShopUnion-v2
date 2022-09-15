@@ -3,11 +3,11 @@ import React from "react";
 
 export default function Breadcrumb({ main, type, title }) {
   return (
-    <nav className="flex" aria-label="Breadcrumb">
+    <nav className="overflow-auto md:overflow-hidden flex" aria-label="Breadcrumb">
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
         <li className="inline-flex items-center">
           <Link href="/">
-            <a className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+            <a className="inline-flex items-center text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
               <svg
                 className="w-4 h-4 mr-2"
                 fill="currentColor"
@@ -23,7 +23,7 @@ export default function Breadcrumb({ main, type, title }) {
         <li>
           <div className="flex items-center">
             <svg
-              className="w-6 h-6 text-gray-400"
+              className="w-6 h-6 text-gray-300"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ export default function Breadcrumb({ main, type, title }) {
               ></path>
             </svg>
             <Link href="/products">
-              <a className="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+              <a className="ml-1 text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-300 dark:hover:text-white">
                 Products
               </a>
             </Link>
@@ -44,7 +44,7 @@ export default function Breadcrumb({ main, type, title }) {
         <li>
           <div className="flex items-center">
             <svg
-              className="w-6 h-6 text-gray-400"
+              className="w-6 h-6 text-gray-300"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export default function Breadcrumb({ main, type, title }) {
               ></path>
             </svg>
             <Link href={`/products/${main}`}>
-              <a className="ml-1 capitalize text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+              <a className="ml-1 capitalize text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-300 dark:hover:text-white">
                 {main}
               </a>
             </Link>
@@ -65,7 +65,7 @@ export default function Breadcrumb({ main, type, title }) {
         <li>
           <div className="flex items-center">
             <svg
-              className="w-6 h-6 text-gray-400"
+              className="w-6 h-6 text-gray-300"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ export default function Breadcrumb({ main, type, title }) {
               ></path>
             </svg>
             <Link href={`/products/${main}/${type}`}>
-              <a className="ml-1 capitalize text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">
+              <a className="ml-1 capitalize text-xs md:text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-300 dark:hover:text-white">
                 {type}
               </a>
             </Link>
@@ -86,7 +86,7 @@ export default function Breadcrumb({ main, type, title }) {
         <li aria-current="page">
           <div className="flex items-center">
             <svg
-              className="w-6 h-6 text-gray-400"
+              className="w-6 h-6 text-gray-300"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ export default function Breadcrumb({ main, type, title }) {
                 clipRule="evenodd"
               ></path>
             </svg>
-            <span className="ml-1 overflow-hidden w-52 whitespace-nowrap text-sm font-medium text-ellipsis text-gray-500 md:ml-2 dark:text-gray-400">
+            <span className="ml-1 overflow-hidden w-52 whitespace-nowrap text-xs md:text-sm font-medium text-ellipsis text-gray-500 md:ml-2 dark:text-gray-400">
               {title}
             </span>
           </div>
