@@ -3,7 +3,7 @@ import Script from "next/script";
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head />
       <body className="bg-white dark:bg-gray-900">
         <Main />
