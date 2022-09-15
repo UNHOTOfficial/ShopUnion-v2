@@ -24,6 +24,7 @@ export default function index({ products }) {
                 rate={product.rating.rate}
                 count={product.rating.count}
                 quantity={product.quantity}
+                type="page"
               />
             </React.Fragment>
           ))}
