@@ -24,7 +24,7 @@ export default function ProductRating({ rate, count, countHidden }) {
         className={`${countHidden} md:block w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400`}
       ></span>
       <span
-        className={`${countHidden} md:block text-sm font-medium text-gray-900 dark:text-white`}
+        className={`${countHidden} md:block text-xs font-medium text-gray-900 dark:text-white`}
       >
         {count} Ratings
       </span>
