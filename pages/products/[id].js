@@ -45,7 +45,7 @@ export default function Product({ product }) {
             countHidden={"block"}
           />
           {product.hasDiscount === true ? (
-            <div className="flex items-center">
+            <div className="hidden lg:flex items-center">
               <span className="bg-red-100 text-red-800 text-xs font-semibold ml-2 px-2.5 py-0.5 rounded-2xl dark:bg-red-200 dark:text-red-900">
                 %
                 {Math.round(
@@ -79,7 +79,7 @@ export default function Product({ product }) {
           <p className="text-sm mt-3">{product.description}</p>
         </div>
 
-        <div className="lg:hidden fixed bottom-0 left-0 z-5 px-4 py-2 w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+        <div className="lg:hidden sticky mt-2 bottom-0 left-0 z-5 px-4 py-2 w-full bg-white border-y border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
           {product.hasDiscount ? (
             <div className="flex w-full justify-between items-center">
               <div>
