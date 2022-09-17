@@ -122,7 +122,7 @@ export default function footer() {
         </div>
       </div>
       <div className="flex flex-col items-end bg-slate-300 text-gray-900 dark:bg-gray-800 dark:text-white">
-        <div className="p-5 text-sm">
+        <div className="p-5 text-sm mx-auto">
           © {GetFooterYear()} ShopUnion™. All Rights Reserved.
         </div>
         <div className="px-2 flex w-full justify-between">
