@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Logo from "../components/logo"
+import Logo from "../components/logo";
 
 export default function Header() {
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-       <Logo/>
+        <Logo />
         <div className="flex md:order-2 md:hidden">
           <button
             type="button"
@@ -109,7 +109,7 @@ export default function Header() {
             <li>
               <a
                 href="#"
-                className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-indigo-300"
+                className="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 text-indigo-300"
                 aria-current="page"
               >
                 Home
