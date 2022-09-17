@@ -1,27 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Logo from "../public/assest/logo/LogoIcon.png";
+import Logo from "../components/logo"
+
 export default function Header() {
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <Link href="/">
-          <a className="flex">
-            <Image
-              src="/assest/logo/image.svg"
-              width="50"
-              height="50"
-              alt="Logo"
-              layout="fixed"
-              placeholder="blur"
-              blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
-            />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              ShopUnion
-            </span>
-          </a>
-        </Link>
+       <Logo/>
         <div className="flex md:order-2">
           <button
             type="button"
