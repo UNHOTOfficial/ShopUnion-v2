@@ -33,7 +33,7 @@ export default function footer() {
             Go To Top
           </button>
         </div>
-        <div className="my-3 lg:my-5 justify-around grid grid-cols-2 gap-4 mx-3">
+        <div className="my-3 lg:my-5 justify-around grid grid-cols-2 lg:grid-cols-5 gap-4 mx-3">
           <div>
             <span className="font-semibold">Company</span>
             <ul className="flex flex-col mt-2">
