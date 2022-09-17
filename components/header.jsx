@@ -8,7 +8,7 @@ export default function Header() {
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
        <Logo/>
-        <div className="flex md:order-2">
+        <div className="flex md:order-2 md:hidden">
           <button
             type="button"
             data-collapse-toggle="navbar-search"
@@ -79,7 +79,7 @@ export default function Header() {
           </button>
         </div>
         <div
-          className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+          className="hidden justify-between items-center w-full md:flex md:order-2 md:w-full"
           id="navbar-search"
         >
           <div className="relative mt-3 md:hidden">
@@ -105,7 +105,7 @@ export default function Header() {
               placeholder="Search..."
             />
           </div>
-          <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col px-3 items-center mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:justify-around md:w-full md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
                 href="#"
@@ -131,7 +131,7 @@ export default function Header() {
                 Services
               </a>
             </li>
-            <li>
+            <li className="w-full md:w-auto">
               <button
                 type="button"
                 className="w-full text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2"
@@ -139,7 +139,7 @@ export default function Header() {
                 Get Started
               </button>
             </li>
-            <li>
+            <li className="w-full md:w-auto">
               <button
                 type="button"
                 className="w-full text-blue-700 mt-2 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
