@@ -18,7 +18,7 @@ export default function Home({ sliderImages, offerProducts, categories }) {
       <div>
         <Carousel sliderImages={sliderImages} />
         <HomeCategories categories={categories} />
-        <ScrollMenu offerProducts={offerProducts} />
+        <ScrollMenu offerProducts={offerProducts} type="menu"/>
       </div>
     </>
   );
