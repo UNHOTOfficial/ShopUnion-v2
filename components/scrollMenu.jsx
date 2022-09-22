@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import ProductCard from "./productCard";
-export default function scrollMenu({ offerProducts }) {
+export default function scrollMenu({ offerProducts, type }) {
   return (
     <div className="flex flex-col bg-slate-300 p-4 dark:bg-gray-800">
       <div className="flex items-center justify-between mb-3">
@@ -47,7 +47,7 @@ export default function scrollMenu({ offerProducts }) {
                 rate={product.rating.rate}
                 count={product.rating.count}
                 quantity={product.quantity}
-                type="menu"
+                type={type}
               />
             </div>
           ))}
