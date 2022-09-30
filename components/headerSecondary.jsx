@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeaderSecondary() {
   return (
-    <nav className="bg-slate-300 border-gray-200 px-4 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+    <nav className="bg-slate-300 border-gray-200 px-4 sm:px-4 py-2.5 dark:bg-gray-800">
       <div className="container flex items-center text-gray-900 dark:text-white">
         <ul className="flex w-2/3 md:w-1/3 xl:w-1/4 justify-between">
             <li className="hover:underline">
