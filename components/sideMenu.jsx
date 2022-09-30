@@ -1,6 +1,6 @@
 export default function SideMenu() {
   return (
-    <aside className="w-72" aria-label="Sidebar">
+    <aside aria-label="Sidebar" className="hidden lg:block">
       <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
         <span className="text-gray-800 dark:text-white text-xl pl-2 font-semibold">
           Filters
