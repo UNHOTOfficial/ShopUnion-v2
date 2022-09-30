@@ -26,7 +26,8 @@ export default function ProductCard({
             <Link href={`/products/${id}`}>
               <a>
                 <Image
-                  className="rounded-t-lg"
+                  className="rounded-t-lg select-none"
+                  draggable="false"
                   src={image}
                   alt={title}
                   quality="100"
@@ -44,7 +45,7 @@ export default function ProductCard({
             <Link href={`/products/${id}`}>
               <a>
                 <span
-                  className="mb-2 text-sm md:text-base font-medium text-gray-900 dark:text-white hover:text-slate-400"
+                  className="mb-2 text-sm md:text-base font-medium text-gray-900 dark:text-white hover:text-gray-700"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -209,7 +210,10 @@ export default function ProductCard({
       );
     case "offer":
       return (
-        <div className="m-1 rounded-lg bg-white border border-gray-200 shadow-md dark:bg-gray-700 dark:border-gray-600 lg:w-72">
+        <div
+          className="m-1 rounded-lg bg-white border border-gray-200 shadow-md dark:bg-gray-700 dark:border-gray-600 lg:w-72"
+          style={{ minHeight: "22.5rem" }}
+        >
           <div className="bg-white rounded-t-lg p-2 flex justify-center">
             <Link href={`/products/${id}`}>
               <a>
