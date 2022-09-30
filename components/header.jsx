@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Logo from "../components/logo";
+import ColorTheme from "../services/ColorTheme";
 
 export default function Header() {
   return (
@@ -13,9 +14,7 @@ export default function Header() {
             type="button"
             id="theme-toggle-dark-icon"
             className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-            onClick={() => {
-              document.getElementsByTagName("body")[0].classList.add("dark");
-            }}
+            onClick={ColorTheme}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -162,11 +161,7 @@ export default function Header() {
                   type="button"
                   id="theme-toggle-dark-icon"
                   className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-                  onClick={() => {
-                    document
-                      .getElementsByTagName("body")[0]
-                      .classList.add("dark");
-                  }}
+                  onClick={ColorTheme}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
