@@ -33,7 +33,7 @@ export default function scrollMenu({ offerProducts, type }) {
             />
           </svg>
         </button>
-        <div className="flex  overflow-auto">
+        <div className="flex overflow-auto lg:overflow-hidden">
           {offerProducts.map((product) => (
             <div key={product.title}>
               <ProductCard
