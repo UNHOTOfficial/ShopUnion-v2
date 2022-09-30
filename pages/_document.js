@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head/>
-      <body className="bg-white dark:bg-gray-900">
+      <body>
         <Main />
         <NextScript />
         {/* Flowbite Js */}
