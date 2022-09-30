@@ -3,7 +3,10 @@ import React from "react";
 
 export default function Breadcrumb({ main, type, title }) {
   return (
-    <nav className="overflow-auto md:overflow-hidden flex" aria-label="Breadcrumb">
+    <nav
+      className="overflow-auto md:overflow-hidden flex bg-white text-gray-900 dark:text-white dark:bg-gray-900"
+      aria-label="Breadcrumb"
+    >
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
         <li className="inline-flex items-center">
           <Link href="/">
