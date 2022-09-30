@@ -19,7 +19,7 @@ export default function Product({ product }) {
         type={product.category.type}
         title={product.title}
       />
-      <div className="my-3 flex flex-wrap justify-center text-gray-900 dark:text-gray-200">
+      <div className="py-3 flex flex-wrap justify-center text-gray-900 dark:text-white dark:bg-gray-900">
         <div className="basis-8/12 px-5 lg:basis-2/6 bg-white dark:bg-gray-900 rounded-lg">
           <Image
             className="rounded-lg"
