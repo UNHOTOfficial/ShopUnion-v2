@@ -7,7 +7,7 @@ import ColorTheme from "../services/ColorTheme";
 export default function Header() {
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
-      <div className="container flex flex-wrap justify-between items-center mx-auto">
+      <div className="container flex flex-wrap md:flex-nowrap justify-between items-center mx-auto">
         <Logo />
         <div className="flex md:order-2 md:hidden">
           <button
@@ -46,7 +46,6 @@ export default function Header() {
               />
             </svg>
           </button>
-
           <button
             type="button"
             data-collapse-toggle="navbar-search"
@@ -143,8 +142,8 @@ export default function Header() {
               placeholder="Search..."
             />
           </div>
-          <div className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:justify-between md:w-full md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 rounded-lg border border-gray-100 px-3 pb-3">
-            <ul className="flex items-center flex-col md:flex-row md:w-1/4 md:justify-evenly">
+          <div className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:justify-between md:w-full md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 rounded-lg border border-gray-100 px-3">
+            <ul className="flex items-center flex-col md:flex-row md:w-2/5 md:justify-evenly">
               <li>
                 <a
                   href="#"
@@ -171,7 +170,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            <ul className="flex items-center justify-evenly w-full mt-2 md:justify-between md:w-2/5 lg:w-2/6 xl:w-1/5">
+            <ul className="flex items-center justify-evenly w-full mt-2 md:justify-between md:w-3/6 lg:w-2/6 xl:w-1/5">
               <li className="hidden md:block">
                 <button
                   type="button"
