@@ -2,6 +2,67 @@ import Link from "next/link";
 import React from "react";
 import ProductCard from "./productCard";
 export default function scrollMenu({ offerProducts, type }) {
+  const scrollMenuWheel = () => {
+    const row = document.getElementById("scrollRow");
+    row.addEventListener("wheel", (event) => {
+      event.preventDefault();
+
+      row.scrollBy({
+        left: event.deltaY < 0 ? -100 : 100,
+        behavior: "auto",
+      });
+    });
+  };
+
+  const dragScrollMenu = () => {
+    const row = document.getElementById("scrollRow");
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    row.addEventListener("mousedown", (e) => {
+      isDown = true;
+      startX = e.pageX - row.offsetLeft;
+      scrollLeft = row.scrollLeft;
+    });
+    row.addEventListener("mouseleave", () => {
+      isDown = false;
+    });
+    row.addEventListener("mouseup", () => {
+      isDown = false;
+    });
+    row.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - row.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      row.scrollLeft = scrollLeft - walk;
+    });
+  };
+
+  const scrollArrowLeft = () => {
+    const arrowLeft = document.querySelector("#scrollButtonLeft");
+    const row = document.querySelector("#scrollRow");
+    arrowLeft.addEventListener("click", (event) => {
+      event.preventDefault();
+      row.scrollBy({
+        left: (event.deltaY = -305),
+      });
+    });
+  };
+
+  const scrollArrowRight = () => {
+    const arrowRight = document.querySelector("#scrollButtonRight");
+    const row = document.querySelector("#scrollRow");
+    arrowRight.addEventListener("click", (event) => {
+      event.preventDefault();
+      row.scrollBy({
+        left: (event.deltaY = 305),
+      });
+    });
+  };
+
   return (
     <div className="flex flex-col bg-slate-300 p-4 dark:bg-gray-800">
       <div className="flex items-center justify-between mb-3">
@@ -14,6 +75,8 @@ export default function scrollMenu({ offerProducts, type }) {
       </div>
       <div className="flex items-center">
         <button
+          onClick={scrollArrowLeft}
+          id="scrollButtonLeft"
           aria-label="left"
           type="button"
           className="text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
@@ -33,7 +96,12 @@ export default function scrollMenu({ offerProducts, type }) {
             />
           </svg>
         </button>
-        <div className="flex overflow-auto lg:overflow-hidden">
+        <div
+          onMouseDown={dragScrollMenu}
+          onWheel={scrollMenuWheel}
+          id="scrollRow"
+          className="flex overflow-auto lg:overflow-hidden"
+        >
           {offerProducts.map((product) => (
             <div key={product.title}>
               <ProductCard
@@ -53,6 +121,8 @@ export default function scrollMenu({ offerProducts, type }) {
           ))}
         </div>
         <button
+          onClick={scrollArrowRight}
+          id="scrollButtonRight"
           aria-label="left"
           type="button"
           className="text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
