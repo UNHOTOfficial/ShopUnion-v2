@@ -62,13 +62,13 @@ export default function signin() {
             </label>
             </div>
             <div className="flex mb-4 text-sm flex-col">
-              <span>
+              <span className="text-gray-900 dark:text-gray-300">
                 Do Not Have An Account?
                 <Link href="/signup">
                   <a className="text-blue-700"> Create One!</a>
                 </Link>
               </span>
-              <span>
+              <span className="text-gray-900 dark:text-gray-300">
                 Need Help?
                 <Link href="/help">
                   <a className="text-blue-700"> Help Center</a>
