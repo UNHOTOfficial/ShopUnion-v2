@@ -143,8 +143,8 @@ export default function Header() {
               placeholder="Search..."
             />
           </div>
-          <div className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:justify-between md:w-full md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 rounded-lg border border-gray-100 px-3">
-            <ul className="flex flex-col md:flex-row md:w-1/4 md:justify-evenly">
+          <div className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:justify-between md:w-full md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 rounded-lg border border-gray-100 px-3 pb-3">
+            <ul className="flex items-center flex-col md:flex-row md:w-1/4 md:justify-evenly">
               <li>
                 <a
                   href="#"
@@ -171,7 +171,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            <ul className="flex items-center justify-evenly md:justify-between w-full lg:w-1/5">
+            <ul className="flex items-center justify-evenly w-full mt-2 md:justify-between lg:w-1/5">
               <li className="hidden md:block">
                 <button
                   type="button"
