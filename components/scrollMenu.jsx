@@ -47,7 +47,7 @@ export default function scrollMenu({ offerProducts, type }) {
     arrowLeft.addEventListener("click", (event) => {
       event.preventDefault();
       row.scrollBy({
-        left: (event.deltaY = -305),
+        left: (event.deltaY = -140),
       });
     });
   };
@@ -58,7 +58,7 @@ export default function scrollMenu({ offerProducts, type }) {
     arrowRight.addEventListener("click", (event) => {
       event.preventDefault();
       row.scrollBy({
-        left: (event.deltaY = 305),
+        left: (event.deltaY = 140),
       });
     });
   };
