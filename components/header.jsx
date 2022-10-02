@@ -171,7 +171,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            <ul className="flex items-center justify-evenly w-full mt-2 md:justify-between lg:w-1/5">
+            <ul className="flex items-center justify-evenly w-full mt-2 md:justify-between md:w-2/5 lg:w-2/6 xl:w-1/5">
               <li className="hidden md:block">
                 <button
                   type="button"
