@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function signin() {
@@ -59,6 +60,20 @@ export default function signin() {
             >
               Remember me
             </label>
+            </div>
+            <div className="flex mb-4 text-sm flex-col">
+              <span>
+                Do Not Have An Account?
+                <Link href="/signup">
+                  <a className="text-blue-700"> Create One!</a>
+                </Link>
+              </span>
+              <span>
+                Need Help?
+                <Link href="/help">
+                  <a className="text-blue-700"> Help Center</a>
+                </Link>
+              </span>
           </div>
           <button
             type="submit"
