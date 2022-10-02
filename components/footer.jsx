@@ -39,21 +39,21 @@ export default function footer() {
             <ul className="flex flex-col mt-2">
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     About
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Careers
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Blog
                   </a>
                 </Link>
@@ -65,21 +65,21 @@ export default function footer() {
             <ul className="flex flex-col mt-2">
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Help!
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     FAQs
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Contact
                   </a>
                 </Link>
@@ -91,21 +91,21 @@ export default function footer() {
             <ul className="flex flex-col mt-2">
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Privacy Policy
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-slate-400">
+                  <a className="text-slate-400 hover:underline dark:text-slate-500">
                     Terms Of Use
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Refund Policy
                   </a>
                 </Link>
@@ -117,21 +117,21 @@ export default function footer() {
             <ul className="flex flex-col mt-2">
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Services Status
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Report A Problem
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Bug Bounty
                   </a>
                 </Link>
@@ -143,14 +143,14 @@ export default function footer() {
             <ul className="flex flex-col mt-2">
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Order Tracking
                   </a>
                 </Link>
               </li>
               <li className="my-1">
                 <Link href="">
-                  <a className="text-slate-300 hover:underline dark:text-gray-700">
+                  <a className="text-slate-400 hover:underline dark:text-gray-500">
                     Compliment
                   </a>
                 </Link>
@@ -196,7 +196,7 @@ export default function footer() {
           </div>
           <div className="hidden ml-2 md:flex flex-col md:w-1/2">
             <span className="capitalize">get latest updates</span>
-            <p className="capitalize text-sm text-slate-300">
+            <p className="capitalize text-sm text-slate-400 dark:text-gray-500">
               to get fresh updates from our newsletter service, subscribe.
             </p>
           </div>
