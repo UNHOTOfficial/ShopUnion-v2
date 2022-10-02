@@ -45,7 +45,7 @@ export default function ProductCard({
             <Link href={`/products/${id}`}>
               <a>
                 <span
-                  className="mb-2 text-sm md:text-base font-medium text-gray-900 dark:text-white hover:text-gray-700"
+                  className="select-none mb-2 text-sm md:text-base font-medium text-gray-900 dark:text-white hover:text-gray-700"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
