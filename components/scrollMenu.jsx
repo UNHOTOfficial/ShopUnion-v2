@@ -42,24 +42,16 @@ export default function scrollMenu({ offerProducts, type }) {
   };
 
   const scrollArrowLeft = () => {
-    const arrowLeft = document.querySelector("#scrollButtonLeft");
     const row = document.querySelector("#scrollRow");
-    arrowLeft.addEventListener("click", (event) => {
-      event.preventDefault();
-      row.scrollBy({
-        left: (event.deltaY = -140),
-      });
+    row.scrollBy({
+      left: (Event.deltaY = -140),
     });
   };
 
   const scrollArrowRight = () => {
-    const arrowRight = document.querySelector("#scrollButtonRight");
     const row = document.querySelector("#scrollRow");
-    arrowRight.addEventListener("click", (event) => {
-      event.preventDefault();
-      row.scrollBy({
-        left: (event.deltaY = 140),
-      });
+    row.scrollBy({
+      left: (Event.deltaY = 140),
     });
   };
 
