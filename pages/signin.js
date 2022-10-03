@@ -10,7 +10,7 @@ export default function signin() {
         <title>ShopUnion</title>
         <meta name="description" content="Sign In To Your ShopUnion Account." />
       </Head>
-      <div className="bg-white dark:bg-gray-900 block md:flex md:justify-between md:items-center">
+      <div className="bg-white dark:bg-gray-900 block md:flex md:justify-evenly md:items-center">
         <form className="p-3 md:w-1/2 lg:w-1/3">
           <span className="mb-10 text-3xl font-bold hidden md:block text-gray-900 dark:text-white">
             Sign In
@@ -60,20 +60,20 @@ export default function signin() {
             >
               Remember me
             </label>
-            </div>
-            <div className="flex mb-4 text-sm flex-col">
-              <span className="text-gray-900 dark:text-gray-300">
-                Do Not Have An Account?
-                <Link href="/signup">
-                  <a className="text-blue-700"> Create One!</a>
-                </Link>
-              </span>
-              <span className="text-gray-900 dark:text-gray-300">
-                Need Help?
-                <Link href="/help">
-                  <a className="text-blue-700"> Help Center</a>
-                </Link>
-              </span>
+          </div>
+          <div className="flex mb-4 text-sm flex-col">
+            <span className="text-gray-900 dark:text-gray-300">
+              Do Not Have An Account?
+              <Link href="/signup">
+                <a className="text-blue-700"> Create One!</a>
+              </Link>
+            </span>
+            <span className="text-gray-900 dark:text-gray-300">
+              Need Help?
+              <Link href="/help">
+                <a className="text-blue-700"> Help Center</a>
+              </Link>
+            </span>
           </div>
           <button
             type="submit"
@@ -82,7 +82,7 @@ export default function signin() {
             Sign In
           </button>
         </form>
-        <div className="hidden md:block md:w-1/2 lg:w-2/3">
+        <div className="hidden md:block md:w-1/2">
           <Image
             src="/assest/online-shopping-concept-digital-marketing-website-mobile-application_43880-342.webp"
             alt="signupImage"
