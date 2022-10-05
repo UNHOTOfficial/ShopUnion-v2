@@ -12,7 +12,7 @@ export default function Logo() {
           height="50"
           alt="Logo"
           layout="fixed"
-          placeholder="blur"
+          // placeholder="blur"
           // blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
         />
         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">

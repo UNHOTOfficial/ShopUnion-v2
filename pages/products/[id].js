@@ -30,7 +30,7 @@ export default function Product({ product }) {
             layout="responsive"
             quality="100"
             objectFit="fill"
-            placeholder="blur"
+            // placeholder="blur"
             // blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
           ></Image>
         </div>
