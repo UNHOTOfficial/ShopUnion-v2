@@ -20,6 +20,7 @@ export default function Carousel({ sliderImages }) {
             <Image
               src={sliderImage.url}
               alt={sliderImage.title}
+              quality="100"
               layout="fill"
               // placeholder="blur"
               // blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
