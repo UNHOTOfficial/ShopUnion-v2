@@ -31,7 +31,7 @@ export default function Product({ product }) {
             quality="100"
             objectFit="fill"
             placeholder="blur"
-            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+            // blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
           ></Image>
         </div>
         <div className="flex flex-col lg:basis-2/6 xl:basis-3/6 text-xl px-5">
