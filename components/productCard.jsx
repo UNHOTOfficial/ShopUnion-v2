@@ -92,7 +92,7 @@ export default function ProductCard({
                       <span className="mr-2 text-base md:text-xl">
                         ${Math.floor((price - discount) * 100) / 100}
                       </span>
-                      <s className="text-slate-300">
+                      <s className="text-slate-400">
                         ${Math.floor(price * 100) / 100}
                       </s>
                     </a>
@@ -186,7 +186,7 @@ export default function ProductCard({
                       <span className="mr-2 text-base md:text-xl">
                         ${Math.floor((price - discount) * 100) / 100}
                       </span>
-                      <s className="text-slate-300">
+                      <s className="text-slate-400">
                         ${Math.floor(price * 100) / 100}
                       </s>
                     </a>
@@ -281,7 +281,7 @@ export default function ProductCard({
                       <span className="mr-2 text-base md:text-xl">
                         ${Math.floor((price - discount) * 100) / 100}
                       </span>
-                      <s className="text-slate-300">
+                      <s className="text-slate-400">
                         ${Math.floor(price * 100) / 100}
                       </s>
                     </a>

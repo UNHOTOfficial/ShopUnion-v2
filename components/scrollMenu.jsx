@@ -60,7 +60,7 @@ export default function scrollMenu({ offerProducts, type }) {
       <div className="flex items-center justify-between mb-3">
         <h2 className="text-gray-900 text-3xl dark:text-white">Offers</h2>
         <Link href="/offers">
-          <a className="text-indigo-400 hover:underline dark:text-indigo-300">
+          <a className="text-indigo-500 hover:underline dark:text-indigo-400">
             See More...
           </a>
         </Link>
