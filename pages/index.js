@@ -26,7 +26,7 @@ export default function Home({ sliderImages, offerProducts, categories }) {
 
 export async function getServerSideProps() {
   const sliderImages = await GetProducts(
-    "https://apigenerator.dronahq.com/api/25-FaSpo/sliderz"
+    "https://apigenerator.dronahq.com/api/B6b77hDJ/slides"
   );
   const offers = await GetProducts(
     "https://apigenerator.dronahq.com/api/U8Y0Ntkw/offers"
