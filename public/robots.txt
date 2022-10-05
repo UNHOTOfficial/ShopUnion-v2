@@ -1,0 +1,2 @@
+Sitemap: https://shop-union-v2.vercel.app/sitemap.xml
+Sitemap: http://shop-union-v2.vercel.app/sitemap.xml
