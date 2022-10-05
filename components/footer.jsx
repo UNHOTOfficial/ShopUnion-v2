@@ -196,7 +196,7 @@ export default function footer() {
           </div>
           <div className="hidden ml-2 md:flex flex-col md:w-1/2">
             <span className="capitalize">get latest updates</span>
-            <p className="capitalize text-sm text-slate-400 dark:text-gray-500">
+            <p className="capitalize text-sm text-slate-500 dark:text-gray-500">
               to get fresh updates from our newsletter service, subscribe.
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function footer() {
           <ul className="flex order-2 md:ml-auto">
             <li className="mx-1">
               <Link href="/tw" aria-label="Twitter">
-                <a className="hover:text-slate-300">
+                <a>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -233,7 +233,7 @@ export default function footer() {
             </li>
             <li className="mx-1">
               <Link href="/ig" aria-label="Instagram">
-                <a className="hover:text-slate-300">
+                <a>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -249,7 +249,7 @@ export default function footer() {
             </li>
             <li className="mx-1">
               <Link href="/tw" aria-label="LinkedIn">
-                <a className="hover:text-slate-300">
+                <a>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={16}
@@ -265,7 +265,7 @@ export default function footer() {
             </li>
             <li className="mx-1">
               <Link href="/tw" aria-label="Telegram">
-                <a className="hover:text-slate-300">
+                <a>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
