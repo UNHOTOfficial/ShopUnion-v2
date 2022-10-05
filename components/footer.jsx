@@ -216,8 +216,8 @@ export default function footer() {
           </div>
           <ul className="flex order-2 md:ml-auto">
             <li className="mx-1">
-              <Link href="/tw" aria-label="Twitter">
-                <a>
+              <Link href="/tw">
+                <a aria-label="Twitter">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -232,8 +232,8 @@ export default function footer() {
               </Link>
             </li>
             <li className="mx-1">
-              <Link href="/ig" aria-label="Instagram">
-                <a>
+              <Link href="/ig">
+                <a aria-label="Instagram">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -248,8 +248,8 @@ export default function footer() {
               </Link>
             </li>
             <li className="mx-1">
-              <Link href="/tw" aria-label="LinkedIn">
-                <a>
+              <Link href="/tw">
+                <a aria-label="LinkedIn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={16}
@@ -264,8 +264,8 @@ export default function footer() {
               </Link>
             </li>
             <li className="mx-1">
-              <Link href="/tw" aria-label="Telegram">
-                <a>
+              <Link href="/tw">
+                <a aria-label="Telegram">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
