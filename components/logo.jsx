@@ -13,7 +13,7 @@ export default function Logo() {
           alt="Logo"
           layout="fixed"
           placeholder="blur"
-          blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
+          // blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII="
         />
         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
           ShopUnion
