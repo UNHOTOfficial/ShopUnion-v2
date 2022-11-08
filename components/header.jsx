@@ -97,8 +97,8 @@ export default function Header() {
           className="hidden justify-between items-center w-full md:flex md:order-2 md:w-full"
           id="navbar-search"
         >
-          <div className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:w-full md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 rounded-lg border border-gray-100 px-3">
-            <div className="relative mt-3 md:mt-0 lg:w-full">
+          <div className="flex flex-col justify-between items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:w-full md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 rounded-lg border border-gray-100 px-3">
+            <div className="relative mt-3 md:mt-0 lg:w-2/3">
               <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                 <svg
                   className="w-5 h-5 text-gray-500"
