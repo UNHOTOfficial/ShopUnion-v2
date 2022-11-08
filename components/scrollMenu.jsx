@@ -58,7 +58,7 @@ export default function scrollMenu({ offerProducts, type, name }) {
   return (
     <div className="flex flex-col m-5 rounded-2xl bg-slate-300 p-4 dark:bg-gray-800">
       <div className="flex items-center justify-between mb-3">
-        <h2 className="capitalize text-gray-900 text-3xl dark:text-white">
+        <h2 className="capitalize text-base text-gray-900 md:text-3xl dark:text-white">
           {name}
         </h2>
         <Link href="/offers">
