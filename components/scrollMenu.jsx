@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import ProductCard from "./productCard";
-export default function scrollMenu({ offerProducts, type }) {
+export default function scrollMenu({ offerProducts, type, name }) {
   const scrollMenuWheel = () => {
     const row = document.getElementById("scrollRow");
     row.addEventListener("wheel", (event) => {
@@ -56,9 +56,11 @@ export default function scrollMenu({ offerProducts, type }) {
   };
 
   return (
-    <div className="flex flex-col bg-slate-300 p-4 dark:bg-gray-800">
+    <div className="flex flex-col m-5 rounded-2xl bg-slate-300 p-4 dark:bg-gray-800">
       <div className="flex items-center justify-between mb-3">
-        <h2 className="text-gray-900 text-3xl dark:text-white">Offers</h2>
+        <h2 className="capitalize text-gray-900 text-3xl dark:text-white">
+          {name}
+        </h2>
         <Link href="/offers">
           <a className="text-indigo-700 hover:underline dark:text-indigo-600">
             See More...
@@ -71,7 +73,7 @@ export default function scrollMenu({ offerProducts, type }) {
           id="scrollButtonLeft"
           aria-label="left"
           type="button"
-          className="text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
+          className="hidden  text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +119,7 @@ export default function scrollMenu({ offerProducts, type }) {
           id="scrollButtonRight"
           aria-label="left"
           type="button"
-          className="text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
+          className="hidden text-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
