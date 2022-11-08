@@ -148,7 +148,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            <ul className="flex items-center justify-evenly md:justify-between md:w-3/6 lg:w-6/12 xl:w-3/12">
+            <ul className="flex items-center justify-evenly md:justify-between md:w-3/6 lg:w-6/12 xl:w-3/12 mb-3">
               <li className="hidden md:block">
                 <button
                   type="button"
@@ -188,7 +188,7 @@ export default function Header() {
                   </svg>
                 </button>
               </li>
-              <li>
+              <li className="mr-2">
                 <Link href="/signup">
                   <button
                     type="button"
