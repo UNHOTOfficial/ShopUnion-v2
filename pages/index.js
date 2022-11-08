@@ -15,10 +15,15 @@ export default function Home({ sliderImages, offerProducts, categories }) {
           content="ShopUnion - One Of The Biggest Online Shops."
         />
       </Head>
-      <div>
+      <div className="dark:bg-gray-900">
         <Carousel sliderImages={sliderImages} />
         <HomeCategories categories={categories} />
-        <ScrollMenu offerProducts={offerProducts} type="menu"/>
+        <ScrollMenu offerProducts={offerProducts} type="menu" name={"offers"} />
+        <ScrollMenu
+          offerProducts={offerProducts}
+          type="menu"
+          name={"most selling"}
+        />
       </div>
     </>
   );
